@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <meta name="google" content="notranslate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        * {
+            transition: .4s !important;
+        }
+
+        body {
+            background-color: #878172;
+        }
+
+        /* #region  menu*/
+        li {
+            margin-top: 10px;
+            margin-left: 15px;
+            margin-right: 15px;
+        }
+
+        .nav-link {
+            color: rgb(236, 236, 236);
+        }
+
+        .linkItem {
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        /* #endregion */
+
+        /* #region 輪播圖 */
+        .photoContainer {
+            padding: 15px;
+        }
+
+        img {
+            width: 100vw;
+            height: 50vh;
+        }
+
+        .carouselSlide {
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        /* #endregion */
+    </style>
+</head>
+
+<body>
+
+    <!-- #region Menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top glass-element">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Navbar</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 linkItem">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">日本旅遊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://rejoicetour.ittms.com.tw/">各國旅遊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">台灣旅遊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">關於我們</a>
+                    </li>
+                    <!-- <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Dropdown
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Action</a></li>
+                            <li><a class="dropdown-item" href="#">Another action</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #endregion -->
+
+    <!-- #region 輪播圖 -->
+    <div class="photoContainer">
+        <div id="carouselExampleAutoplaying" class="carousel slide carouselSlide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/img1.svg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img2.svg" class="d-block " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img3.svg" class="d-block" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <!-- #endregion -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js"
+        integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
