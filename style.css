@@ -119,3 +119,130 @@
     background: rgba(161, 49, 49, 0.75) !important;
   }
 }
+
+
+.carouselDescription{
+  font-size: large;
+  color: #666666;
+  text-align: center;
+  margin-top: 8px;
+
+  height: 15vh;
+}
+
+.contentContainer{
+  display: flex;
+  justify-content: center;
+}
+
+.contentArea{
+  /* border: 1px solid blue; */
+  margin:20px 5px;
+  border-radius: 5px;
+  width: 95%;
+  background-color: #a7a7a7;
+}
+
+.contentArea> div:nth-child(1){
+  font-size: xxx-large;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 12px;
+  margin-bottom: 12px;
+  
+}
+.contentArea> div:nth-child(2){
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 2vh;
+}
+.contentArea> div:nth-child(2) img{
+  width: 20vw;
+  height: 20vw;
+  height: auto;
+  border-radius: 12px;
+
+}
+
+.contentArea>div:nth-child(3) {
+  display: flex;
+  justify-content: flex-end;
+  width: 95%;
+  margin-bottom: 2vh;
+}
+.contentArea> i{
+  font-size: 48px;
+  color: #555555;
+  margin-top: 8vh;
+}
+
+.contentArea> i:hover{
+  color: #222222;
+  cursor: pointer;
+}
+
+.contentDescription>div:nth-child(2)>img{
+  margin-right: 5vw;
+}
+
+.contentDescription>div:nth-child(2){
+  font-size: x-large;
+  font-weight: bold;
+  color: #333333;
+  margin-left: 12px;
+  margin-bottom: 12px;
+}
+
+
+
+footer{
+  background-color: #1E1E24;
+  color: white;
+  height: 30vh;
+}
+
+footer>div:nth-child(1){
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 40px;
+}
+
+footer>div:nth-child(1) a,footer div:nth-child(1) label{
+  font-size: x-large;
+  text-decoration: none;
+}
+
+footer>div:nth-child(1) a,footer div:nth-child(2) label{
+  font-size: x-large;
+  text-decoration: none;
+}
+
+footer>div:nth-child(2){
+  display: flex;
+  justify-content: space-around;
+  align-items: top;
+  height: 70%;
+}
+
+footer>div:nth-child(2)>div{
+  width: 30%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: start;
+  gap: 2vh;
+}
+
+footer>div:nth-child(2)>div:nth-child(3){
+  /* border: 1px solid blue; */
+}
+
+footer>div:nth-child(2)>div:nth-child(3) i{
+  font-size: x-large;
+}
+
+footer>div:nth-child(2)>div:nth-child(3) i:hover{
+  color: #AAAAFF;
+  cursor: pointer;
+}
