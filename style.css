@@ -144,6 +144,11 @@
   height: 15vh;
 }
 
+body {
+    background-color: #F5F7FA;
+}
+
+
 .contentContainer{
   display: flex;
   justify-content: center;
@@ -154,13 +159,13 @@
   margin:20px 5px;
   border-radius: 5px;
   width: 95%;
-  background-color: #a7a7a7;
+  background-color:#38576a;
 }
 
 .contentArea> div:nth-child(1){
   font-size: xxx-large;
   font-weight: bold;
-  color: #333333;
+  color: white;
   margin-left: 12px;
   margin-bottom: 12px;
   
@@ -175,6 +180,11 @@
   height: 20vw;
   height: auto;
   border-radius: 12px;
+
+}
+
+.contentArea> div:nth-child(2) p{
+color: white;
 
 }
 
@@ -266,10 +276,6 @@ footer>div:nth-child(2)>div:nth-child(3) i:hover{
 
 * {
   transition: .4s !important;
-}
-
-body {
-  background-color: #878172;
 }
 
 /* #region  menu*/
