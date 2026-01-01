@@ -1,0 +1,267 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <meta name="google" content="notranslate">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <style>
+        .contentArea>div:nth-child(1) {
+            font-size: xxx-large;
+        }
+
+        .contentArea>div:nth-child(2)>img {
+            width: 40vw;
+            height: 27vh;
+            margin-left: 5%;
+            margin-right: 5%;
+        }
+
+        .contentArea>div:nth-child(2) {
+            display: flex;
+            justify-content: start !important;
+            flex-wrap: wrap;
+        }
+
+        .contentArea>div:nth-child(2)>div {
+
+            color: white;
+        }
+
+        .contentArea>div:nth-child(2)>div>div {
+            font-size: x-large;
+        }
+
+        .introduce {}
+
+        .introduce>div:nth-child(2)>div {
+            margin: 0px 50px;
+        }
+
+        .introduce>div:nth-child(2)>div div {
+            margin: 10px;
+        }
+
+        .introduce>div:nth-child(2) img {
+            width: 17vw;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- #region Menu -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary sticky-top glass-element">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="./index.html"><img src="./img/logo.png" style="width: 120px;height: 60px;background-color: white;" alt=""></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 linkItem">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="./index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./JapanTour.html">日本旅遊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://rejoicetour.ittms.com.tw/">各國旅遊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./TaiwanTour.html">台灣旅遊</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./EmployeeTrip.html">企業員旅</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="./AboutUs.html">關於我們</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- #endregion -->
+    <!-- #region 輪播圖 -->
+    <div class="photoContainer">
+        <div id="carouselExampleAutoplaying" class="carousel slide carouselSlide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="./img/img1.svg" class="d-block" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img2.svg" class="d-block " alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="./img/img3.svg" class="d-block" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </div>
+
+    <div class="carouselDescription">
+        <div style="width: 80%;">
+            <h1>公司簡介</h1>
+            <p></p>
+            <br>
+            <p>
+                瑞恩國際旅行社成立於2015年底，我們相信這是一個受神祝福的企業，因此我們也期待能夠成為每一位客戶的祝福。<br>
+                總是站在客戶的角度，認真思考規劃每一趟旅程，希望為每一位客戶創造超乎期待的美好回憶！<br><br>
+
+                「常常旅行、常常喜樂」是我們的口號，引用自聖經「要常常喜樂、不住禱告、凡事謝恩」這段充滿盼望的經文，<br>
+                時時提醒我們以感恩的心面對每一次的服務機會，也更期望與客戶一起透過旅行，心得喜樂滿足！<br><br>
+
+                作為旅行服務業，誠懇又忠實的服務是我們展現的專業態度，不以低價但低品質作為手段，而以認真並誠實為客戶打造物超所值的旅程，期望成為榮神且益人的優質企業。
+            </p>
+        </div>
+
+
+    </div>
+
+    <!-- #endregion -->
+
+    <div class="contentContainer">
+        <div class="contentArea" style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+            <div>服務項目</div>
+            <div style="color: white;font-size: xx-large;">
+                - 半自助小包團：以日韓為主力，其他地區亦可詢問規劃 <br>
+                - 國內外包團旅遊規劃
+
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+    <div class="contentContainer">
+        <div class="contentArea">
+            <div>口碑好評</div>
+            <div>
+                <div style="margin-left: 15px;gap: 15px;margin-right: 50px;">
+                    <img src="./img/img1.jpg" alt="">
+                    <img src="./img/img1.jpg" alt="">
+                </div>
+
+                <div>
+                    <h2>口碑標題、文章主旨</h2>
+                    <div>
+                        文章、簡述、連結
+
+                    </div>
+                </div>
+            </div>
+            <div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contentContainer">
+        <div class="contentArea" style="display: flex;justify-content: center;flex-direction: column;align-items: center;">
+            <div>異業合作</div>
+            <div style="color: white;font-size: xx-large;">
+                (文字) 邀請異業合作→信箱：ratour01@gmail.com
+
+            </div>
+        </div>
+        <div>
+        </div>
+    </div>
+
+
+
+    <footer>
+        <div>
+            <label for="">瑞恩國際旅行社有限公司</label>
+            <a href="#">首頁</a>
+            <a href="#">關於我們</a>
+            <a href="#">辦理簽證</a>
+            <a href="#">契約書下載</a>
+        </div>
+        <div>
+            <div>
+                <div>註冊編號：甲種旅行社8403</div>
+                <div>品保會員：(北)2397</div>
+                <div>統一編號：42741316</div>
+                <div>代表人: 林新約</div>
+                <div>練落人: 林新約</div>
+            </div>
+            <div>
+                <div>地址：台北市中山區建國北路二段147號14樓之5</div>
+                <div>電話：02-2508 1270</div>
+                <div>傳真：02-2508 1270</div>
+                <div>信箱：ratour01@gmail.com</div>
+                <div>營業時間:周一~周五 9:30~18:00</div>
+            </div>
+            <div>
+                <div>
+                    <label for="">社群追蹤</label>
+                    <div>
+                        <i class="fa-brands fa-square-facebook"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-square-youtube"></i>
+                    </div>
+                    <div>
+                        <i class="fa-brands fa-line"></i>
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                </div>
+                <div>
+                    <label for="">CreditCard</label>
+                    <div>
+                        <i class="fa-brands fa-cc-visa"></i>
+                        <i class="fa-brands fa-cc-mastercard"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.0.1/js/bootstrap.min.js" integrity="sha512-EKWWs1ZcA2ZY9lbLISPz8aGR2+L7JVYqBAYTq5AXgBkSjRSuQEGqWx8R1zAX16KdXPaCjOCaKE8MCpU0wcHlHA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        let customList = document.getElementById("customList");
+        window.onload = async () => {
+            let data = await fetch('./Home/all')
+            data = await data.json();
+            console.log(data);
+
+            customList.innerHTML += `
+
+                ${data.map(item => `
+                    <div style="display: flex; width: 10%;margin:10px;background-color:white;border-radius:5px;">
+                        <div style="display:flex;justify-content:center;align-items:center;text-align:center;margin-right:5px">
+                            <div style="margin-right:5px">名字:</div>
+                            <div>${item.name}</div>
+                        </div>
+                        
+                        <div style="display:flex;justify-content:center;align-items:center;text-align:center">
+                            <div style="margin-right:5px">年紀:</div>
+                            <div>${item.age}</div>
+                        </div>
+                    </div>
+                `).join('')}`
+        }
+    </script>
+
+<!-- Visual Studio Browser Link -->
+<script type="text/javascript" src="/_vs/browserLink" async="async" id="__browserLink_initializationData" data-requestid="833f2a515ad1463db77f223842c37da8" data-requestmappingfromserver="false" data-connecturl="http://localhost:59190/fdbc688d8fce4eaea961626b2f12acfd/browserLink"></script>
+<!-- End Browser Link -->
+<script src="/_framework/aspnetcore-browser-refresh.js"></script>
+
+</body>
+
+</html>
