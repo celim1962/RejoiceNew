@@ -390,7 +390,7 @@
         const trip = data.find(t => t.detailId == id);
         console.log('trip:', trip);
         if (trip) {
-            document.getElementById('tripId').innerText = trip.tripId;
+            document.getElementById('tripId').innerText = '團號: '+trip.tripId;
             document.getElementById('title').innerText = trip.title;
             document.getElementById('startDate').innerText = trip.startDate;
             document.getElementById('days').innerText = trip.days + '天';
