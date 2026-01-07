@@ -228,171 +228,176 @@
         <div class="detailContent">
             <div class="detailHeader">
                 <div>
-                    <p>團號：1234567890</p>
+                    <p id="tripId"></p>
                 </div>
 
-                <h2>【雪舞紛飛北海道５日】保住三晚溫泉、函館雪飄夜景、企鵝散步、三合一戲雪趣、北國彩燈祭、螃蟹溫泉</h2>
+                <h2 id="title"></h2>   
             </div>
             <hr>
             <div class="peopleDetail">
                 <div>
                     <p>出發日期</p>
-                    <div>2025/01/01</div>
+                    <div id="startDate">2025/01/01</div>
                 </div>
                 <div>
                     <p>旅遊天數</p>
-                    <div>5天</div>
+                    <div id="days">5天</div>
                 </div>
                 <div>
                     <p>可售團位</p>
-                    <div style="color: rgb(167, 39, 39);">31個</div>
+                    <div id="availableSlots" style="color: rgb(167, 39, 39);">31個</div>
                 </div>
             </div>
         </div>
     </div>
     <!-- #endregion -->
 
-    <!-- #region Info -->
-    <div class="registerInfoContainer">
-        <h2>選擇報名人數</h2>
-        <table class="table table-secondary table-borderless registerInfo">
-            <thead>
-                <tr>
-                    <th scope="col col-6">項目</th>
-                    <th scope="col">價格</th>
-                    <th scope="col">人數</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>大人</td>
-                    <td>43800</td>
-                    <td>
-                        <div class="form-floating">
-                            <div class="custom-select">
-                                <button id="selectBtn0">選擇人數</button>
-                                <div class="options" id="options0">
-                                    <div data-value="1">1</div>
-                                    <div data-value="2">2</div>
-                                    <div data-value="3">3</div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>小孩佔床</td>
-                    <td>43800</td>
-                    <td>
-                        <div class="form-floating">
-                            <div class="custom-select">
-                                <button id="selectBtn1">選擇人數</button>
-                                <div class="options" id="options1">
-                                    <div data-value="1">1</div>
-                                    <div data-value="2">2</div>
-                                    <div data-value="3">3</div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>小孩不佔床</td>
-                    <td>39800</td>
-                    <td>
-                        <div class="form-floating">
-                            <div class="custom-select">
-                                <button id="selectBtn2">選擇人數</button>
-                                <div class="options" id="options2">
-                                    <div data-value="1">1</div>
-                                    <div data-value="2">2</div>
-                                    <div data-value="3">3</div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td>嬰兒</td>
-                    <td>6500</td>
-                    <td>
-                        <div class="form-floating">
-                            <div class="custom-select">
-                                <button id="selectBtn3">選擇人數</button>
-                                <div class="options" id="options3">
-                                    <div data-value="1">1</div>
-                                    <div data-value="2">2</div>
-                                    <div data-value="3">3</div>
-                                </div>
-                            </div>
-                        </div>
-                    </td>
-                </tr>
-                <tr>
-                    <td style="color: white;">結算資訊</td>
-                    <td>1</td>
-                    <td>
-                        1
-                    </td>
-                </tr>
 
-            </tbody>
-        </table>
+    <div>
+        <hr>
+        <!-- 加入description> -->
+        <div style="width: 80%; margin: auto; font-size: xxx-large; line-height: 1.6;">
+            <p style="font-size: xx-large;" id="description">
+                體驗北海道冬季魅力，享受溫泉與雪地活動的完美結合。 探索函館夜景，觀賞企鵝散步，參加北國彩燈祭，品嚐新鮮螃蟹料理，留下難忘回憶。    每一份旅程都是獨特的冒險，讓我們帶您走進北海道的冬季仙境。
+            </p>
     </div>
-    <!-- #endregion -->
-
-    <!-- #region form -->
-    <div class="formContainer">
-        <h2>報名資訊</h2>
-        <form style="width: 40%;display: flex;flex-direction: column;">
-            <div class="form-group group">
-                <label for="name">Name</label>
-                <input type="text" class="form-control" id="name" placeholder="Your Name">
-            </div>
-
-            <div class="form-group group">
-                <label for="exampleInputEmail1">Email address</label>
-                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
-                    placeholder="xxx@xxx.com">
-            </div>
-            <div class="form-group group">
-                <label for="phone">Phone No.</label>
-                <input type="tel" class="form-control" id="phone" placeholder="xxxx-xxx-xxx">
-            </div>
-            <div class="form-group group">
-                <label for="note">Note</label>
-                <input type="text" class="form-control" id="note" placeholder="Your Note">
-            </div>
-
-
-
-
-            <button type="submit" class="btn btn-primary group">送出</button>
-        </form>
-    </div>
-    <!-- #endregion -->
 
     <script>
-        for (let i = 0; i < 4; i++) {
-            let btn = document.getElementById('selectBtn' + i);
-            let options = document.getElementById('options' + i);
+        const data = [
+            {
+                "detailId": 2,
+                "tripId": "1234567890",
+                "title": "【雪舞紛飛北海道５日】保住三晚溫泉、函館雪飄夜景、企鵝散步、三合一戲雪趣、北國彩燈祭、螃蟹溫泉",
+                "price": 25000,
+                "startDate": "2025/01/01",
+                "days": 5,
+                "availableSlots": 31,
+                "description": "體驗北海道冬季魅力，享受溫泉與雪地活動的完美結合。<br> 探索函館夜景，觀賞企鵝散步，參加北國彩燈祭，品嚐新鮮螃蟹料理，留下難忘回憶。<br>    每一份旅程都是獨特的冒險，讓我們帶您走進北海道的冬季仙境。"
+            },
+            {
+                "detailId": 3,
+                "tripId": "0987654321",
+                "title": "【陽光沙灘沖繩４日】雙島遊覽、海洋博公園、美麗海水族館、國際通逛街購物、五星飯店住宿",
+                "price": 20000,
+                "startDate": "2025/02/15",
+                "days": 4,
+                "availableSlots": 20,
+                "description": "探索沖繩的陽光與海灘，享受雙島遊覽的樂趣。<br> 參觀海洋博公園和美麗海水族館，感受海洋生物的魅力。 在國際通逛街購物，體驗當地文化與美食。<br> 住宿五星飯店，享受奢華舒適的旅程。"
+            },
+            {
+                "detailId": 4,
+                "tripId": "1122334455",
+                "title": "【文化古都京都６日】金閣寺、清水寺、伏見稻荷大社、嵐山竹林、和服體驗、傳統茶道",
+                "price": 30000,
+                "startDate": "2025/03/10",
+                "days": 6,
+                "availableSlots": 15,
+                "description": "深入京都的文化古都，探索歷史悠久的寺廟與神社。<br> 參觀金閣寺、清水寺和伏見稻荷大社，感受日本傳統建築之美。<br> 漫步嵐山竹林，體驗和服穿著與傳統茶道，感受日本文化的精髓。"
+            },
+            {
+                "detailId": 5,
+                "tripId": "5566778899",
+                "title": "【東京迪士尼樂園５日】雙樂園暢遊、晴空塔、淺草寺、秋葉原電器街、購物天堂銀座",
+                "price": 28000,
+                "startDate": "2025/04/05",
+                "days": 5,
+                "availableSlots": 25,
+                "description": "享受東京迪士尼樂園的魔法世界，暢遊雙樂園的精彩設施。<br> 探訪晴空塔，俯瞰東京全景，參觀淺草寺，感受傳統與現代的融合。<br> 在秋葉原電器街尋找最新科技產品，並在銀座購物天堂盡情購物。"
+            }, 
+            {
+                "detailId": 6,
+                "tripId": "6677889900",
+                "title": "【九州溫泉巡禮７日】別府溫泉、湯布院、熊本城、長崎和平公園、豪斯登堡",
+                "price": 32000,
+                "startDate": "2025/05/20",
+                "days": 7,
+                "availableSlots": 18,
+                "description": "探索九州的溫泉文化，享受別府溫泉和湯布院的療癒之旅。<br> 參觀歷史悠久的熊本城，緬懷長崎和平公園的歷史意義。<br> 探索豪斯登堡，感受歐洲風情與日本文化的完美結合。"
+            },{
+                "detailId": 7,
+                "tripId": "7788990011",
+                "title": "【四國自然風光５日】金刀比羅宮、栗林公園、道後溫泉、讚岐烏龍麵製作體驗",
+                "price": 24000,
+                "startDate": "2025/06/15",
+                "days": 5,
+                "availableSlots": 22,
+                "description": "探索四國的自然風光，參觀金刀比羅宮和栗林公園，享受道後溫泉的療癒。<br> 體驗讚岐烏龍麵的製作過程，感受當地文化與美食的魅力。"
+            },{
+                "detailId": 8,
+                "tripId": "8899001122",
+                "title": "【北海道夏季花海６日】富良野薰衣草、美瑛拼布之路、旭山動物園、札幌市區觀光",
+                "price": 31000,
+                "startDate": "2025/07/10",
+                "days": 6,
+                "availableSlots": 19,
+                "description": "體驗北海道夏季的花海美景，欣賞富良野薰衣草和美瑛拼布之路的絢麗色彩。<br> 參觀旭山動物園，觀察北國動物的生活習性。<br> 探索札幌市區，感受城市與自然的完美融合。"
+            },{
+                "detailId": 9,
+                "tripId": "9900112233",
+                "title": "【大阪美食購物４日】道頓堀美食街、心齋橋購物、環球影城、天守閣",
+                "price": 23000,
+                "startDate": "2025/08/05",
+                "days": 4,
+                "availableSlots": 28,
+                "description": "探索大阪的美食與購物天堂，品嚐道頓堀美食街的各式美味料理。<br> 在心齋橋盡情購物，尋找最新潮流商品。<br>  享受環球影城的刺激遊樂設施，參觀歷史悠久的大阪天守閣。"
+            },{
+                "detailId": 10,
+                "tripId": "1011121314",
+                "title": "【名古屋文化探索５日】名古屋城、熱田神宮、德川美術館、合掌村",
+                "price": 26000,
+                "startDate": "2025/09/01",
+                "days": 5,
+                "availableSlots": 24,
+                "description": "深入名古屋的文化探索之旅，參觀歷史悠久的名古屋城和熱田神宮。<br> 欣賞德川美術館的珍貴收藏，體驗合掌村的傳統建築風情。<br> 感受名古屋獨特的歷史與文化魅力。"
+            },{
+                "detailId": 11,
+                "tripId": "1213141516",
+                "title": "【沖繩潛水冒險４日】青洞潛水、慶良間群島、海中展望塔、沖繩文化體驗",
+                "price": 27000,
+                "startDate": "2025/10/20",
+                "days": 4,
+                "availableSlots": 21,
+                "description": "體驗沖繩的潛水冒險，探索青洞的神秘海底世界。<br> 參觀慶良間群島，欣賞絢麗的珊瑚礁與海洋生物。<br> 登上海中展望塔，俯瞰壯麗的海景，並體驗沖繩獨特的文化活動。"
+            },{
+                "detailId": 12,
+                "tripId": "1314151617",
+                "title": "【東京賞楓５日】高尾山、明治神宮、上野公園、銀座購物、淺草寺",
+                "price": 29000,
+                "startDate": "2025/11/10",
+                "days": 5,
+                "availableSlots": 27,
+                "description": "欣賞東京的秋季賞楓美景，登上高尾山俯瞰紅葉景色。<br> 參觀明治神宮和上野公園，感受秋天的浪漫氛圍。<br> 在銀座購物天堂尋找時尚商品，並參觀歷史悠久的淺草寺。"
+            },{
+                "detailId": 13,
+                "tripId": "1415161718",
+                "title": "【京都冬季浪漫６日】嵐山雪景、清水寺夜間特別參拜、和服體驗、傳統料理",
+                "price": 33000,
+                "startDate": "2025/12/05",
+                "days": 6,
+                "availableSlots": 16,
+                "description": "體驗京都冬季的浪漫氛圍，欣賞嵐山的雪景美景。<br> 參加清水寺的夜間特別參拜，感受神聖的冬季氛圍。<br> 體驗和服穿著與品嚐傳統料理，留下難忘的冬季回憶。"
+            }
 
-            btn.addEventListener('click', () => {
-                options.classList.toggle('open');
-            });
 
-            options.querySelectorAll('div').forEach(opt => {
-                opt.addEventListener('click', () => {
-                    btn.textContent = opt.textContent;
-                    options.classList.remove('open');
-                });
-            });
+        ]
+        
+        //get id from url
+        const urlParams = new URLSearchParams(window.location.search);
+        const id = urlParams.get('id');
+        console.log('Trip ID from URL:', id);
+        
 
-            document.addEventListener('click', (e) => {
-                if (!e.target.closest('.custom-select')) {
-                    options.classList.remove('open');
-                }
-            });
+        const trip = data.find(t => t.detailId == id);
+        console.log('trip:', trip);
+        if (trip) {
+            document.getElementById('tripId').innerText = trip.tripId;
+            document.getElementById('title').innerText = trip.title;
+            document.getElementById('startDate').innerText = trip.startDate;
+            document.getElementById('days').innerText = trip.days + '天';
+            document.getElementById('availableSlots').innerText = trip.availableSlots + '個';
+            document.getElementById('description').innerHTML = trip.description;
+        } else {
+            document.getElementById('tripId').innerText = 'Trip not found';
         }
 
 
